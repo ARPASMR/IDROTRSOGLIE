@@ -1,0 +1,19 @@
+set terminal png giant size 950,666
+		set output "/home/meteo/scripts/idrotrsoglie/dati/1scnm.png"
+		set title "Stazione di CEPINA\n Scala valida dal 20140815\n a=36.483; b=-0.0846; c=1.944 per -0.2<=H[m]<=2.5\n valore alle 09:40:00.000 del 2017-09-13"
+		set grid lt 0 lw 1
+		unset key
+		set y2tics nomirror
+		set xlabel "Livello [m]"
+		#set x2label "portata misure"
+		set ylabel "Portata attuale [mc/s]"
+		set y2label "Portata [mc/s]"
+		set xtics nomirror
+		set pointsize 0.8
+		set xrange [-0.2:6.0749]
+		set yrange [0:36.483*(6.0749+-0.0846)**1.944]
+		set y2range [0:36.483*(6.0749+-0.0846)**1.944]
+		set arrow from -0.2,0 to -0.2,(36.483*(-0.2+-0.0846)**1.944) 
+		set arrow from 2.5,0 to 2.5,(36.483*(2.5+-0.0846)**1.944)
+		#set autoscale y2
+		plot x<6.0749 ? 36.483*(x+-0.0846)**1.944 : 1/0 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc1.dat" u 1:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc1.dat" u ($1+0.2):($2+0.2):1 with labels axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc1.dat" u 1:2:yticlabels(2) w p ps 0 axes x1y2

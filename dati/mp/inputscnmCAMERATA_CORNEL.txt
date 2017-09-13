@@ -1,0 +1,20 @@
+set terminal png giant size 950,666
+		set output "/home/meteo/scripts/idrotrsoglie/dati/9079scnm.png"
+		set title "Stazione di CAMERATA_CORNEL \n Scala valida dal 20140101 \n a=94.131; b=0.163; c=3.168; per -0.2<=H[m]<=0.32 \n a1=76.35; b1=-0.014; c1=1.77 per 0.32<H[m]<=2.5 \n valore del 2017-09-13 alle 09:40:00.000"
+		set grid lt 0 lw 1
+		unset key
+		set xlabel "Livello [m]"
+		set y2tics nomirror
+		#set yrange [0:2500]
+		set xrange [-0.2:2.5]
+		set yrange [0:76.35*(2.5+-0.014)**1.77]
+		set y2range [0:76.35*(2.5+-0.014)**1.77]
+		set ylabel "Portata attuale [mc/s]"
+		set y2label "Portata [mc/s]"
+		set xtics nomirror
+		set arrow from -0.2,0 to -0.2,(94.131*(-0.2+0.163)**3.168) 
+		set arrow from 2.5,0 to 2.5,(76.35*(2.5+-0.014)**1.77)
+		set pointsize 0.8
+		set sample 1025
+		#set autoscale y
+		plot x<=0.32 ? 94.131*(x+0.163)**3.168 : 1/0 axes x1y1, 0.32<=x && x<=2.5 ? 76.35*(x+(-0.014))**1.77 : 1/0 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc9079.dat" u 1:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc9079.dat" u ($1+0.2):($2+0.2):1 with labels axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc9079.dat" u 1:2:yticlabels(2) w p ps 0 axes x1y2

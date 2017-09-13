@@ -1,0 +1,18 @@
+set terminal png giant size 950,666
+		set output "/home/meteo/scripts/idrotrsoglie/dati/14310sc.png"
+		set title "Stazione di SALERANO_AL_LAM - Scala valida dal 20141101 \n a=16.755; b=0.121; c=1.787; a1=45.145; b1=-0.522; c1=1.143"
+		set grid lt 0 lw 1
+		unset key
+		set xlabel "Livello [m]"
+		set y2tics nomirror
+		#set yrange [0:2500]
+		set xrange [0:7]
+		set yrange [0:45.145*(7+-0.522)**1.143]
+		set y2range [0:45.145*(7+-0.522)**1.143]
+		set ylabel "Portata attuale [mc/s]"
+		set y2label "Portata [mc/s]"
+		set xtics nomirror
+		set pointsize 0.8
+		set sample 1025
+		#set autoscale y
+		plot x<=2.95 ? 16.755*(x+0.121)**1.787 : 1/0 axes x1y1, 2.95<=x && x<=7 ? 45.145*(x+(-0.522))**1.143 : 1/0 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/gaug14310.tmp" u 3:4 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/gaug14310.tmp" u ($3):($4+2):2 with labels  rotate left axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc14310.dat" u 1:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc14310.dat" u ($1+0.2):($2+0.2):1 with labels axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc14310.dat" u 1:2:yticlabels(2) w p ps 0 axes x1y2

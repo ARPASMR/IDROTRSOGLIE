@@ -1,0 +1,18 @@
+set terminal png giant size 950,666
+		set output "/home/meteo/scripts/idrotrsoglie/dati/8114sc.png"
+		set title "Stazione di LODI - Scala valida dal 20140101 \n a=101.88; b=2.493; c=1.956; a1=730.49; b1=0.768; c1=0.525"
+		set grid lt 0 lw 1
+		unset key
+		set xlabel "Livello [m]"
+		set y2tics nomirror
+		#set yrange [0:2500]
+		set xrange [-2.2:3.5]
+		set yrange [0:730.49*(3.5+0.768)**0.525]
+		set y2range [0:730.49*(3.5+0.768)**0.525]
+		set ylabel "Portata attuale [mc/s]"
+		set y2label "Portata [mc/s]"
+		set xtics nomirror
+		set pointsize 0.8
+		set sample 1025
+		#set autoscale y
+		plot x<=-0.55 ? 101.88*(x+2.493)**1.956 : 1/0 axes x1y1, -0.55<=x && x<=3.5 ? 730.49*(x+(0.768))**0.525 : 1/0 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/gaug8114.tmp" u 3:4 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/gaug8114.tmp" u ($3):($4+2):2 with labels  rotate left axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8114.dat" u 1:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8114.dat" u ($1+0.2):($2+0.2):1 with labels axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8114.dat" u 1:2:yticlabels(2) w p ps 0 axes x1y2

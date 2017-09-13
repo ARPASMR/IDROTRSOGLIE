@@ -1,0 +1,18 @@
+set terminal png giant size 950,666
+		set output "/home/meteo/scripts/idrotrsoglie/dati/9082sc.png"
+		set title "Stazione di PTE_CENE - Scala valida dal 20140101 \n a=0.0027; b=3.599; c=6.889; a1=160.627; b1=0.139; c1=1.332"
+		set grid lt 0 lw 1
+		unset key
+		set xlabel "Livello [m]"
+		set y2tics nomirror
+		#set yrange [0:2500]
+		set xrange [-1:2.1]
+		set yrange [0:160.627*(2.1+0.139)**1.332]
+		set y2range [0:160.627*(2.1+0.139)**1.332]
+		set ylabel "Portata attuale [mc/s]"
+		set y2label "Portata [mc/s]"
+		set xtics nomirror
+		set pointsize 0.8
+		set sample 1025
+		#set autoscale y
+		plot x<=0.086 ? 0.0027*(x+3.599)**6.889 : 1/0 axes x1y1, 0.086<=x && x<=2.1 ? 160.627*(x+(0.139))**1.332 : 1/0 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/gaug9082.tmp" u 3:4 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/gaug9082.tmp" u ($3):($4+2):2 with labels  rotate left axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc9082.dat" u 1:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc9082.dat" u ($1+0.2):($2+0.2):1 with labels axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc9082.dat" u 1:2:yticlabels(2) w p ps 0 axes x1y2

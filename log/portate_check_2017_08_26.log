@@ -1,0 +1,142 @@
+Cleaning up temporary files ...
+Starting GRASS ...
+tput: No value for $TERM and no -T specified
+          __________  ___   __________    _______________
+         / ____/ __ \/   | / ___/ ___/   / ____/  _/ ___/
+        / / __/ /_/ / /| | \__ \\_  \   / / __ / / \__ \ 
+       / /_/ / _, _/ ___ |___/ /__/ /  / /_/ // / ___/ / 
+       \____/_/ |_/_/  |_/____/____/   \____/___//____/  
+
+Welcome to GRASS 6.4.4 (2014) 
+GRASS homepage:                          http://grass.osgeo.org/
+This version running thru:               Bourne Shell (/bin/sh)
+Help is available with the command:      g.manual -i
+See the licence terms with:              g.version -c
+Start the GUI with:                      g.gui wxpython
+When ready to quit enter:                exit
+
+WARNING: Vector map <idromp> already exists and will be overwritten
+Scanning input for column types...
+Maximum input row length: 122
+Maximum number of columns: 18
+Minimum number of columns: 18
+Column: 1 type: integer
+Column: 2 type: integer
+Column: 3 type: string length: 15
+Column: 4 type: integer
+Column: 5 type: integer
+Column: 6 type: integer
+Column: 7 type: string length: 18
+Column: 8 type: string length: 10
+Column: 9 type: string length: 5
+Column: 10 type: integer
+Column: 11 type: double
+Column: 12 type: double
+Column: 13 type: integer
+Column: 14 type: integer
+Column: 15 type: integer
+Column: 16 type: integer
+Column: 17 type: double
+Column: 18 type: double
+WARNING: Column number 16 <lung> defined as string has only integer values
+WARNING: Column number 17 <livt> defined as string has double values
+Importing points...
+   2%   6%   9%  13%  18%  22%  25%  29%  34%  38%  43%  47%  50%  54%  59%  63%  68%  72%  75%  79%  84%  88%  93%  97% 100%
+Populating table...
+Building topology for vector map <idromp>...
+Registering primitives...
+44 primitives registered
+44 vertices registered
+Building areas...
+   2%   4%   6%   9%  11%  13%  15%  18%  20%  22%  25%  27%  29%  31%  34%  36%  38%  40%  43%  45%  47%  50%  52%  54%  56%  59%  61%  63%  65%  68%  70%  72%  75%  77%  79%  81%  84%  86%  88%  90%  93%  95%  97% 100%
+0 areas built
+0 isles built
+Attaching islands...
+Attaching centroids...
+   2%   4%   6%   9%  11%  13%  15%  18%  20%  22%  25%  27%  29%  31%  34%  36%  38%  40%  43%  45%  47%  50%  52%  54%  56%  59%  61%  63%  65%  68%  70%  72%  75%  77%  79%  81%  84%  86%  88%  90%  93%  95%  97% 100%
+Number of nodes: 44
+Number of primitives: 44
+Number of points: 44
+Number of lines: 0
+Number of boundaries: 0
+Number of centroids: 0
+Number of areas: 0
+Number of isles: 0
+v.in.ascii complete.
+WARNING: OGR layer <idromp> already exists and will be overwritten
+Exporting 44 geometries...
+   2%   4%   6%   9%  11%  13%  15%  18%  20%  22%  25%  27%  29%  31%  34%  36%  38%  40%  43%  45%  47%  50%  52%  54%  56%  59%  61%  63%  65%  68%  70%  72%  75%  77%  79%  81%  84%  86%  88%  90%  93%  95%  97% 100%
+v.out.ogr complete. 44 features written to <idromp> (ESRI_Shapefile).
+Executing: program /usr/bin/ssh host 172.16.1.11, user idroweb, command scp -v -d -t /var/www/idro/pmapper_demodata
+OpenSSH_5.3p1, OpenSSL 1.0.1e-fips 11 Feb 2013
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Applying options for *
+debug1: Connecting to 172.16.1.11 [172.16.1.11] port 22.
+debug1: Connection established.
+debug1: identity file /home/meteo/.ssh/identity type -1
+debug1: identity file /home/meteo/.ssh/identity-cert type -1
+debug1: identity file /home/meteo/.ssh/id_rsa type 1
+debug1: identity file /home/meteo/.ssh/id_rsa-cert type -1
+debug1: identity file /home/meteo/.ssh/id_dsa type -1
+debug1: identity file /home/meteo/.ssh/id_dsa-cert type -1
+debug1: identity file /home/meteo/.ssh/id_ecdsa type -1
+debug1: identity file /home/meteo/.ssh/id_ecdsa-cert type -1
+debug1: Remote protocol version 2.0, remote software version OpenSSH_5.1p1 Debian-6ubuntu2
+debug1: match: OpenSSH_5.1p1 Debian-6ubuntu2 pat OpenSSH*
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_5.3
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: server->client aes128-ctr hmac-md5 none
+debug1: kex: client->server aes128-ctr hmac-md5 none
+debug1: SSH2_MSG_KEX_DH_GEX_REQUEST(1024<1024<8192) sent
+debug1: expecting SSH2_MSG_KEX_DH_GEX_GROUP
+debug1: SSH2_MSG_KEX_DH_GEX_INIT sent
+debug1: expecting SSH2_MSG_KEX_DH_GEX_REPLY
+debug1: Host '172.16.1.11' is known and matches the RSA host key.
+debug1: Found key in /home/meteo/.ssh/known_hosts:13
+debug1: ssh_rsa_verify: signature correct
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: SSH2_MSG_SERVICE_REQUEST sent
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: Trying private key: /home/meteo/.ssh/identity
+debug1: Offering public key: /home/meteo/.ssh/id_rsa
+debug1: Server accepts key: pkalg ssh-rsa blen 277
+debug1: read PEM private key done: type RSA
+debug1: Authentication succeeded (publickey).
+debug1: channel 0: new [client-session]
+debug1: Requesting no-more-sessions@openssh.com
+debug1: Entering interactive session.
+debug1: Sending environment.
+debug1: Sending env LANG = en_US.UTF-8
+debug1: Sending env LANGUAGE = en_US.UTF-8
+debug1: Sending command: scp -v -d -t /var/www/idro/pmapper_demodata
+Sending file modes: C0644 18209 idromp.dbf
+Sink: C0644 18209 idromp.dbf
+Sending file modes: C0644 395 idromp.prj
+Sink: C0644 395 idromp.prj
+Sending file modes: C0644 1332 idromp.shp
+Sink: C0644 1332 idromp.shp
+Sending file modes: C0644 452 idromp.shx
+Sink: C0644 452 idromp.shx
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+debug1: channel 0: free: client-session, nchannels 1
+debug1: fd 0 clearing O_NONBLOCK
+debug1: fd 1 clearing O_NONBLOCK
+debug1: fd 2 clearing O_NONBLOCK
+Transferred: sent 23288, received 2760 bytes, in 0.3 seconds
+Bytes per second: sent 73152.8, received 8669.8
+debug1: Exit status 0
+tput: No value for $TERM and no -T specified
+Closing monitors ...
+Cleaning up temporary files ...
+Done.
+
+
+
+Goodbye from GRASS GIS
+

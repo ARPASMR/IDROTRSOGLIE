@@ -1,0 +1,19 @@
+set terminal png giant size 950,666
+		set output "/home/meteo/scripts/idrotrsoglie/dati/3002scnm.png"
+		set title "Stazione di MONTODINE_BODES\n Scala valida dal 20150101\n a=25.303; b=1.531; c=2.161 per -1.5<=H[m]<=1.5\n valore alle 09:40:00.000 del 2017-09-13"
+		set grid lt 0 lw 1
+		unset key
+		set y2tics nomirror
+		set xlabel "Livello [m]"
+		#set x2label "portata misure"
+		set ylabel "Portata attuale [mc/s]"
+		set y2label "Portata [mc/s]"
+		set xtics nomirror
+		set pointsize 0.8
+		set xrange [-1.5:1.5]
+		set yrange [0:25.303*(1.5+1.531)**2.161]
+		set y2range [0:25.303*(1.5+1.531)**2.161]
+		set arrow from -1.5,0 to -1.5,(25.303*(-1.5+1.531)**2.161) 
+		set arrow from 1.5,0 to 1.5,(25.303*(1.5+1.531)**2.161)
+		#set autoscale y2
+		plot x<1.5 ? 25.303*(x+1.531)**2.161 : 1/0 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc3002.dat" u 1:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc3002.dat" u ($1+0.2):($2+0.2):1 with labels axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc3002.dat" u 1:2:yticlabels(2) w p ps 0 axes x1y2

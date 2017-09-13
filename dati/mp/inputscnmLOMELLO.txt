@@ -1,0 +1,20 @@
+set terminal png giant size 950,666
+		set output "/home/meteo/scripts/idrotrsoglie/dati/8177scnm.png"
+		set title "Stazione di LOMELLO \n Scala valida dal 20150101 \n a=47.49; b=-0.498; c=0.813; per 0.53<=H[m]<=0.85 \n a1=8.068; b1=0.574; c1=2.569 per 0.85<H[m]<=1.4 \n a2=28.119; b2=-0.094; c2=1.841 per 1.4<H[m]<=3.50 \n valore del 2017-09-13 alle 09:40:00.000"
+		set grid lt 0 lw 1
+		unset key
+		set xlabel "Livello [m]"
+		set y2tics nomirror
+		#set yrange [0:2500]
+		set xrange [0.53:3.50]
+		set yrange [0:28.119*(3.50+-0.094)**1.841]
+		set y2range [0:28.119*(3.50+-0.094)**1.841]
+		set ylabel "Portata attuale [mc/s]"
+		set y2label "Portata [mc/s]"
+		set xtics nomirror
+		set arrow from 0.53,0 to 0.53,(47.49*(0.53+-0.498)**0.813) 
+		set arrow from 3.50,0 to 3.50,(28.119*(3.50+-0.094)**1.841)
+		set pointsize 0.8
+		set sample 1025
+		#set autoscale y
+		plot x<0.85 ? 47.49*(x+-0.498)**0.813 : 1/0 axes x1y1, 0.85<=x && x<1.4 ? 8.068*(x+(0.574))**2.569 : 1/0 axes x1y1, 1.4<=x && x<=3.50 ? 28.119*(x+(-0.094))**1.841 : 1/0 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8177.dat" u 1:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8177.dat" u ($1+0.2):($2+0.2):1 with labels axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8177.dat" u 1:2:yticlabels(2) w p ps 0 axes x1y2

@@ -1,0 +1,21 @@
+set terminal png giant size 950,666
+		set output "/home/meteo/scripts/idrotrsoglie/dati/3050.jpeg"
+		set title "Portate stazione di Pizzighettone (dati non validati)"
+		set grid
+		unset key
+		set datafile missing "-9999"
+		set xdata time
+		set timefmt "%Y-%m-%d %H:%M"
+		set format x "%d/%m"
+		set xlabel "giorno"
+		set ylabel "Portata [m3/s]" tc lt 1
+		set y2label "livello [cm]" tc lt 3
+		set y2tics
+		set ytics nomirror
+		set pointsize 0.8
+		set label "velocita' [cm/s]" at graph 0.97, 0.38 rotate left tc lt 5
+		set label "livello CAE [cm]" at screen 0.975, 0.7 rotate left tc lt 4
+		#set yrange [*:881]
+		set autoscale y2
+		set autoscale y
+		plot "/home/meteo/.nmarzi/out/3050_R.txt"  using 2:($4) with lines lt 1 lw 1 axes x1y1, "/home/meteo/.nmarzi/out/3032_R.txt" using 2:($4) with lines lt 3 lw 1 axes x1y2, "/home/meteo/.nmarzi/out/3046_RQ.txt"  using 2:($4) with lines lt 5 lw 1 axes x1y2, "/home/meteo/.nmarzi/out/8394_RQ.txt"  using 2:($4) with lines lt 4 lw 1 axes x1y2

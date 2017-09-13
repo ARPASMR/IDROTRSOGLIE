@@ -1,0 +1,73 @@
+Cleaning up temporary files ...
+Starting GRASS ...
+tput: No value for $TERM and no -T specified
+          __________  ___   __________    _______________
+         / ____/ __ \/   | / ___/ ___/   / ____/  _/ ___/
+        / / __/ /_/ / /| | \__ \\_  \   / / __ / / \__ \ 
+       / /_/ / _, _/ ___ |___/ /__/ /  / /_/ // / ___/ / 
+       \____/_/ |_/_/  |_/____/____/   \____/___//____/  
+
+Welcome to GRASS 6.4.4 (2014) 
+GRASS homepage:                          http://grass.osgeo.org/
+This version running thru:               Bourne Shell (/bin/sh)
+Help is available with the command:      g.manual -i
+See the licence terms with:              g.version -c
+Start the GUI with:                      g.gui wxpython
+When ready to quit enter:                exit
+
+WARNING: Vector map <Qtr1> already exists and will be overwritten
+Scanning input for column types...
+Maximum input row length: 89
+Maximum number of columns: 13
+Minimum number of columns: 13
+Column: 1 type: integer
+Column: 2 type: string length: 13
+Column: 3 type: integer
+Column: 4 type: integer
+Column: 5 type: string length: 6
+Column: 6 type: string length: 10
+Column: 7 type: string length: 5
+Column: 8 type: double
+Column: 9 type: integer
+Column: 10 type: double
+Column: 11 type: double
+Column: 12 type: double
+Column: 13 type: double
+WARNING: Column number 11 <liv> defined as string has double values
+WARNING: Column number 13 <vel> defined as string has double values
+Importing points...
+  16%  33%  50%  66%  83% 100%
+Populating table...
+Building topology for vector map <Qtr1>...
+Registering primitives...
+6 primitives registered
+6 vertices registered
+Building areas...
+  16%  33%  50%  66%  83% 100%
+0 areas built
+0 isles built
+Attaching islands...
+Attaching centroids...
+  16%  33%  50%  66%  83% 100%
+Number of nodes: 6
+Number of primitives: 6
+Number of points: 6
+Number of lines: 0
+Number of boundaries: 0
+Number of centroids: 0
+Number of areas: 0
+Number of isles: 0
+v.in.ascii complete.
+WARNING: OGR layer <Qtr> already exists and will be overwritten
+Exporting 6 geometries...
+  16%  33%  50%  66%  83% 100%
+v.out.ogr complete. 6 features written to <Qtr> (ESRI_Shapefile).
+tput: No value for $TERM and no -T specified
+Closing monitors ...
+Cleaning up temporary files ...
+Done.
+
+
+
+Goodbye from GRASS GIS
+

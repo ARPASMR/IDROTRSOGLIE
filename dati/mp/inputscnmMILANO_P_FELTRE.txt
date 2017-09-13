@@ -1,0 +1,20 @@
+set terminal png giant size 950,666
+		set output "/home/meteo/scripts/idrotrsoglie/dati/8125scnm.png"
+		set title "Stazione di MILANO_P_FELTRE \n Scala valida dal 20150101 \n a=27.743; b=-0.215; c=1.491; per 0.22<=H[m]<=2.33 \n a1=108.481; b1=-1.922; c1=0.276 per 2.33<H[m]<=3.85 \n valore del 2017-09-13 alle 09:40:00.000"
+		set grid lt 0 lw 1
+		unset key
+		set xlabel "Livello [m]"
+		set y2tics nomirror
+		#set yrange [0:2500]
+		set xrange [0.22:3.85]
+		set yrange [0:108.481*(3.85+-1.922)**0.276]
+		set y2range [0:108.481*(3.85+-1.922)**0.276]
+		set ylabel "Portata attuale [mc/s]"
+		set y2label "Portata [mc/s]"
+		set xtics nomirror
+		set arrow from 0.22,0 to 0.22,(27.743*(0.22+-0.215)**1.491) 
+		set arrow from 3.85,0 to 3.85,(108.481*(3.85+-1.922)**0.276)
+		set pointsize 0.8
+		set sample 1025
+		#set autoscale y
+		plot x<=2.33 ? 27.743*(x+-0.215)**1.491 : 1/0 axes x1y1, 2.33<=x && x<=3.85 ? 108.481*(x+(-1.922))**0.276 : 1/0 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8125.dat" u 1:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8125.dat" u ($1+0.2):($2+0.2):1 with labels axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8125.dat" u 1:2:yticlabels(2) w p ps 0 axes x1y2

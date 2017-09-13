@@ -1,0 +1,19 @@
+set terminal png giant size 950,666
+		set output "/home/meteo/scripts/idrotrsoglie/dati/8545scnm.png"
+		set title "Stazione di MARCARIA\n Scala valida dal 20140101\n a=27.037; b=1.727; c=1.74 per -1.5<=H[m]<=6.0\n valore alle 03:30:00.000 del 2017-09-13"
+		set grid lt 0 lw 1
+		unset key
+		set y2tics nomirror
+		set xlabel "Livello [m]"
+		#set x2label "portata misure"
+		set ylabel "Portata attuale [mc/s]"
+		set y2label "Portata [mc/s]"
+		set xtics nomirror
+		set pointsize 0.8
+		set xrange [-1.5:6.0]
+		set yrange [0:27.037*(6.0+1.727)**1.74]
+		set y2range [0:27.037*(6.0+1.727)**1.74]
+		set arrow from -1.5,0 to -1.5,(27.037*(-1.5+1.727)**1.74) 
+		set arrow from 6.0,0 to 6.0,(27.037*(6.0+1.727)**1.74)
+		#set autoscale y2
+		plot x<6.0 ? 27.037*(x+1.727)**1.74 : 1/0 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8545.dat" u 1:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8545.dat" u ($1+0.2):($2+0.2):1 with labels axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8545.dat" u 1:2:yticlabels(2) w p ps 0 axes x1y2

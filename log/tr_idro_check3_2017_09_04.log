@@ -1,0 +1,73 @@
+Cleaning up temporary files ...
+Starting GRASS ...
+tput: No value for $TERM and no -T specified
+          __________  ___   __________    _______________
+         / ____/ __ \/   | / ___/ ___/   / ____/  _/ ___/
+        / / __/ /_/ / /| | \__ \\_  \   / / __ / / \__ \ 
+       / /_/ / _, _/ ___ |___/ /__/ /  / /_/ // / ___/ / 
+       \____/_/ |_/_/  |_/____/____/   \____/___//____/  
+
+Welcome to GRASS 6.4.4 (2014) 
+GRASS homepage:                          http://grass.osgeo.org/
+This version running thru:               Bourne Shell (/bin/sh)
+Help is available with the command:      g.manual -i
+See the licence terms with:              g.version -c
+Start the GUI with:                      g.gui wxpython
+When ready to quit enter:                exit
+
+WARNING: Vector map <idrotr> already exists and will be overwritten
+Scanning input for column types...
+Maximum input row length: 120
+Maximum number of columns: 13
+Minimum number of columns: 13
+Column: 1 type: integer
+Column: 2 type: string length: 39
+Column: 3 type: integer
+Column: 4 type: integer
+Column: 5 type: integer
+Column: 6 type: integer
+Column: 7 type: integer
+Column: 8 type: string length: 18
+Column: 9 type: integer
+Column: 10 type: string length: 10
+Column: 11 type: string length: 5
+Column: 12 type: double
+Column: 13 type: integer
+WARNING: Column number 13 <livello> defined as string has only integer
+         values
+Importing points...
+   2%   5%   8%  11%  14%  18%  21%  25%  28%  32%  35%  38%  42%  45%  49%  52%  56%  59%  63%  66%  69%  73%  76%  80%  83%  87%  90%  94%  97% 100%
+Populating table...
+Building topology for vector map <idrotr>...
+Registering primitives...
+71 primitives registered
+71 vertices registered
+Building areas...
+   1%   4%   7%   9%  11%  14%  16%  18%  21%  23%  25%  28%  30%  32%  35%  38%  40%  42%  45%  47%  49%  52%  54%  56%  59%  61%  63%  66%  69%  71%  73%  76%  78%  80%  83%  85%  87%  90%  92%  94%  97% 100%
+0 areas built
+0 isles built
+Attaching islands...
+Attaching centroids...
+   1%   4%   7%   9%  11%  14%  16%  18%  21%  23%  25%  28%  30%  32%  35%  38%  40%  42%  45%  47%  49%  52%  54%  56%  59%  61%  63%  66%  69%  71%  73%  76%  78%  80%  83%  85%  87%  90%  92%  94%  97% 100%
+Number of nodes: 70
+Number of primitives: 71
+Number of points: 71
+Number of lines: 0
+Number of boundaries: 0
+Number of centroids: 0
+Number of areas: 0
+Number of isles: 0
+v.in.ascii complete.
+WARNING: OGR layer <idrotr> already exists and will be overwritten
+Exporting 71 geometries...
+   1%   4%   7%   9%  11%  14%  16%  18%  21%  23%  25%  28%  30%  32%  35%  38%  40%  42%  45%  47%  49%  52%  54%  56%  59%  61%  63%  66%  69%  71%  73%  76%  78%  80%  83%  85%  87%  90%  92%  94%  97% 100%
+v.out.ogr complete. 71 features written to <idrotr> (ESRI_Shapefile).
+tput: No value for $TERM and no -T specified
+Closing monitors ...
+Cleaning up temporary files ...
+Done.
+
+
+
+Goodbye from GRASS GIS
+

@@ -1,0 +1,18 @@
+set terminal png giant size 950,666
+		set output "/home/meteo/scripts/idrotrsoglie/dati/8192sc.png"
+		set title "Stazione di VOGHERA - Scala valida dal 20150101 \n a=6.582; b=-0.4; c=2.604; a1=27.69; b1=-0.695; c1=1.5; a2=20.255; b2=-0.518; c2=2.093"
+		set grid lt 0 lw 1
+		unset key
+		set xlabel "Livello [m]"
+		set y2tics nomirror
+		#set yrange [0:2500]
+		set xrange [0.28:4.10]
+		set yrange [0:20.255*(4.10+-0.518)**2.093]
+		set y2range [0:20.255*(4.10+-0.518)**2.093]
+		set ylabel "Portata attuale [mc/s]"
+		set y2label "Portata [mc/s]"
+		set xtics nomirror
+		set pointsize 0.8
+		set sample 1025
+		#set autoscale y
+		plot x<0.76 ? 6.582*(x+-0.4)**2.604 : 1/0 axes x1y1, 0.76<=x && x<0.945 ? 27.69*(x+(-0.695))**1.5 : 1/0 axes x1y1, 0.945<=x && x<=4.10 ? 20.255*(x+(-0.518))**2.093 : 1/0 axes x1y1,"/home/meteo/scripts/idrotrsoglie/dati/mp/gaug8192.tmp" u 3:4 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/gaug8192.tmp" u ($3):($4+2):2 with labels  rotate left axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8192.dat" u 1:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8192.dat" u ($1+0.2):($2+0.2):1 with labels axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc8192.dat" u 1:2:yticlabels(2) w p ps 0 axes x1y2

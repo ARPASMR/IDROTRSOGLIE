@@ -1,0 +1,19 @@
+set terminal png giant size 950,666
+		set output "/home/meteo/scripts/idrotrsoglie/dati/14307scnm.png"
+		set title "Stazione di LOCATE_TRIULZI\n Scala valida dal 20141124\n a=25.189; b=0.664; c=1.356 per -0.6<=H[m]<=2.5\n valore alle 09:40:00.000 del 2017-09-13"
+		set grid lt 0 lw 1
+		unset key
+		set y2tics nomirror
+		set xlabel "Livello [m]"
+		#set x2label "portata misure"
+		set ylabel "Portata attuale [mc/s]"
+		set y2label "Portata [mc/s]"
+		set xtics nomirror
+		set pointsize 0.8
+		set xrange [-0.6:2.5]
+		set yrange [0:25.189*(2.5+0.664)**1.356]
+		set y2range [0:25.189*(2.5+0.664)**1.356]
+		set arrow from -0.6,0 to -0.6,(25.189*(-0.6+0.664)**1.356) 
+		set arrow from 2.5,0 to 2.5,(25.189*(2.5+0.664)**1.356)
+		#set autoscale y2
+		plot x<2.5 ? 25.189*(x+0.664)**1.356 : 1/0 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc14307.dat" u 1:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc14307.dat" u ($1+0.2):($2+0.2):1 with labels axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc14307.dat" u 1:2:yticlabels(2) w p ps 0 axes x1y2

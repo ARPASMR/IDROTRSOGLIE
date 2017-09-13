@@ -1,0 +1,196 @@
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+awk: cmd. line:1: fatal: cannot open file `/home/meteo/scripts/idrotrsoglie/dati/mp/livm_.txt' for reading (No such file or directory)
+(standard_in) 2: syntax error
+(standard_in) 1: syntax error
+awk: cmd. line:1: fatal: cannot open file `/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CANTU_ASNAGO.txt' for reading (No such file or directory)
+Could not find/open font when opening font "arial", using internal non-scalable font
+
+plot "/home/meteo/scripts/idrotrsoglie/dati/mp/durate/cdur_CANTU_ASNAGO.txt" using 2:1 with lines lt 3 lw 3 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_CANTU_ASNAGO.txt" u 3:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_CANTU_ASNAGO.txt" u 3:2:2 with labels offset 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/mpCANTU_ASNAGO.tmp" u ($2+0.05):($1+0.15):4 with labels rotate left axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CANTU_ASNAGO.txt" u 3:2 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CANTU_ASNAGO.txt" u 3:2:yticlabels(2) w p ps 0 axes x1y2
+                                                                                                                       		                                                                                                           		                                                                                                          		                                                                                                                    ^
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputCANTU_ASNAGO.txt", line 19: warning: Skipping data file with no valid points
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputCANTU_ASNAGO.txt", line 19: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CANTU_ASNAGO.txt"
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputCANTU_ASNAGO.txt", line 19: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CANTU_ASNAGO.txt"
+Could not find/open font when opening font "arial", using internal non-scalable font
+
+plot "/home/meteo/scripts/idrotrsoglie/dati/mp/durate/cdur6_CANTU_ASNAGO.txt" using 2:1 with lines lt 3 lw 3 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_CANTU_ASNAGO.txt" u 3:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_CANTU_ASNAGO.txt" u 3:2:2 with labels offset 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/mpCANTU_ASNAGO.tmp" u ($2+0.1):($1+0.07):4 with labels rotate left axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CANTU_ASNAGO.txt" u 3:2 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CANTU_ASNAGO.txt" u 3:2:yticlabels(2) w p ps 0 axes x1y2
+                                                                                                                        		                                                                                                           		                                                                                                          		                                                                                                                   ^
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputCANTU_ASNAGO.txt", line 20: warning: Skipping data file with no valid points
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputCANTU_ASNAGO.txt", line 20: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CANTU_ASNAGO.txt"
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputCANTU_ASNAGO.txt", line 20: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CANTU_ASNAGO.txt"
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+awk: cmd. line:1: fatal: cannot open file `/home/meteo/scripts/idrotrsoglie/dati/mp/livm_.txt' for reading (No such file or directory)
+(standard_in) 2: syntax error
+(standard_in) 1: syntax error
+awk: cmd. line:1: fatal: cannot open file `/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CASTIGLIONE_OLO.txt' for reading (No such file or directory)
+Could not find/open font when opening font "arial", using internal non-scalable font
+
+plot "/home/meteo/scripts/idrotrsoglie/dati/mp/durate/cdur_CASTIGLIONE_OLO.txt" using 2:1 with lines lt 3 lw 3 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_CASTIGLIONE_OLO.txt" u 3:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_CASTIGLIONE_OLO.txt" u 3:2:2 with labels offset 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/mpCASTIGLIONE_OLO.tmp" u ($2+0.05):($1+0.15):4 with labels rotate left axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CASTIGLIONE_OLO.txt" u 3:2 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CASTIGLIONE_OLO.txt" u 3:2:yticlabels(2) w p ps 0 axes x1y2
+                                                                                                                          		                                                                                                              		                                                                                                             		                                                                                                                       ^
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputCASTIGLIONE_OLO.txt", line 19: warning: Skipping data file with no valid points
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputCASTIGLIONE_OLO.txt", line 19: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CASTIGLIONE_OLO.txt"
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputCASTIGLIONE_OLO.txt", line 19: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CASTIGLIONE_OLO.txt"
+Could not find/open font when opening font "arial", using internal non-scalable font
+
+plot "/home/meteo/scripts/idrotrsoglie/dati/mp/durate/cdur6_CASTIGLIONE_OLO.txt" using 2:1 with lines lt 3 lw 3 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_CASTIGLIONE_OLO.txt" u 3:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_CASTIGLIONE_OLO.txt" u 3:2:2 with labels offset 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/mpCASTIGLIONE_OLO.tmp" u ($2+0.1):($1+0.07):4 with labels rotate left axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CASTIGLIONE_OLO.txt" u 3:2 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CASTIGLIONE_OLO.txt" u 3:2:yticlabels(2) w p ps 0 axes x1y2
+                                                                                                                           		                                                                                                              		                                                                                                             		                                                                                                                      ^
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputCASTIGLIONE_OLO.txt", line 20: warning: Skipping data file with no valid points
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputCASTIGLIONE_OLO.txt", line 20: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CASTIGLIONE_OLO.txt"
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputCASTIGLIONE_OLO.txt", line 20: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_CASTIGLIONE_OLO.txt"
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+awk: cmd. line:1: fatal: cannot open file `/home/meteo/scripts/idrotrsoglie/dati/mp/livm_.txt' for reading (No such file or directory)
+(standard_in) 2: syntax error
+(standard_in) 1: syntax error
+awk: cmd. line:1: fatal: cannot open file `/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_S_MARIA_LAVELLO.txt' for reading (No such file or directory)
+Could not find/open font when opening font "arial", using internal non-scalable font
+
+plot "/home/meteo/scripts/idrotrsoglie/dati/mp/durate/cdur_S_MARIA_LAVELLO.txt" using 2:1 with lines lt 3 lw 3 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_S_MARIA_LAVELLO.txt" u 3:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_S_MARIA_LAVELLO.txt" u 3:2:2 with labels offset 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/mpS_MARIA_LAVELLO.tmp" u ($2+0.05):($1+0.15):4 with labels rotate left axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_S_MARIA_LAVELLO.txt" u 3:2 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_S_MARIA_LAVELLO.txt" u 3:2:yticlabels(2) w p ps 0 axes x1y2
+                                                                                                                          		                                                                                                              		                                                                                                             		                                                                                                                       ^
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputS_MARIA_LAVELLO.txt", line 19: warning: Skipping data file with no valid points
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputS_MARIA_LAVELLO.txt", line 19: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_S_MARIA_LAVELLO.txt"
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputS_MARIA_LAVELLO.txt", line 19: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_S_MARIA_LAVELLO.txt"
+Could not find/open font when opening font "arial", using internal non-scalable font
+
+plot "/home/meteo/scripts/idrotrsoglie/dati/mp/durate/cdur6_S_MARIA_LAVELLO.txt" using 2:1 with lines lt 3 lw 3 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_S_MARIA_LAVELLO.txt" u 3:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_S_MARIA_LAVELLO.txt" u 3:2:2 with labels offset 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/mpS_MARIA_LAVELLO.tmp" u ($2+0.1):($1+0.07):4 with labels rotate left axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_S_MARIA_LAVELLO.txt" u 3:2 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_S_MARIA_LAVELLO.txt" u 3:2:yticlabels(2) w p ps 0 axes x1y2
+                                                                                                                           		                                                                                                              		                                                                                                             		                                                                                                                      ^
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputS_MARIA_LAVELLO.txt", line 20: warning: Skipping data file with no valid points
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputS_MARIA_LAVELLO.txt", line 20: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_S_MARIA_LAVELLO.txt"
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputS_MARIA_LAVELLO.txt", line 20: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_S_MARIA_LAVELLO.txt"
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+awk: cmd. line:1: fatal: cannot open file `/home/meteo/scripts/idrotrsoglie/dati/mp/livm_.txt' for reading (No such file or directory)
+(standard_in) 2: syntax error
+(standard_in) 1: syntax error
+awk: cmd. line:1: fatal: cannot open file `/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_RIVOLTA_ADDA.txt' for reading (No such file or directory)
+Could not find/open font when opening font "arial", using internal non-scalable font
+
+plot "/home/meteo/scripts/idrotrsoglie/dati/mp/durate/cdur_RIVOLTA_ADDA.txt" using 2:1 with lines lt 3 lw 3 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_RIVOLTA_ADDA.txt" u 3:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_RIVOLTA_ADDA.txt" u 3:2:2 with labels offset 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/mpRIVOLTA_ADDA.tmp" u ($2+0.05):($1+0.15):4 with labels rotate left axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_RIVOLTA_ADDA.txt" u 3:2 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_RIVOLTA_ADDA.txt" u 3:2:yticlabels(2) w p ps 0 axes x1y2
+                                                                                                                       		                                                                                                           		                                                                                                          		                                                                                                                    ^
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputRIVOLTA_ADDA.txt", line 19: warning: Skipping data file with no valid points
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputRIVOLTA_ADDA.txt", line 19: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_RIVOLTA_ADDA.txt"
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputRIVOLTA_ADDA.txt", line 19: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_RIVOLTA_ADDA.txt"
+Could not find/open font when opening font "arial", using internal non-scalable font
+
+plot "/home/meteo/scripts/idrotrsoglie/dati/mp/durate/cdur6_RIVOLTA_ADDA.txt" using 2:1 with lines lt 3 lw 3 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_RIVOLTA_ADDA.txt" u 3:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_RIVOLTA_ADDA.txt" u 3:2:2 with labels offset 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/mpRIVOLTA_ADDA.tmp" u ($2+0.1):($1+0.07):4 with labels rotate left axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_RIVOLTA_ADDA.txt" u 3:2 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_RIVOLTA_ADDA.txt" u 3:2:yticlabels(2) w p ps 0 axes x1y2
+                                                                                                                        		                                                                                                           		                                                                                                          		                                                                                                                   ^
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputRIVOLTA_ADDA.txt", line 20: warning: Skipping data file with no valid points
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputRIVOLTA_ADDA.txt", line 20: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_RIVOLTA_ADDA.txt"
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputRIVOLTA_ADDA.txt", line 20: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_RIVOLTA_ADDA.txt"
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+awk: cmd. line:1: fatal: cannot open file `/home/meteo/scripts/idrotrsoglie/dati/mp/livm_.txt' for reading (No such file or directory)
+(standard_in) 2: syntax error
+(standard_in) 1: syntax error
+awk: cmd. line:1: fatal: cannot open file `/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_DARFO_CAVALIERI.txt' for reading (No such file or directory)
+Could not find/open font when opening font "arial", using internal non-scalable font
+
+plot "/home/meteo/scripts/idrotrsoglie/dati/mp/durate/cdur_DARFO_CAVALIERI.txt" using 2:1 with lines lt 3 lw 3 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_DARFO_CAVALIERI.txt" u 3:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_DARFO_CAVALIERI.txt" u 3:2:2 with labels offset 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/mpDARFO_CAVALIERI.tmp" u ($2+0.05):($1+0.15):4 with labels rotate left axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_DARFO_CAVALIERI.txt" u 3:2 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_DARFO_CAVALIERI.txt" u 3:2:yticlabels(2) w p ps 0 axes x1y2
+                                                                                                                          		                                                                                                              		                                                                                                             		                                                                                                                       ^
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputDARFO_CAVALIERI.txt", line 19: warning: Skipping data file with no valid points
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputDARFO_CAVALIERI.txt", line 19: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_DARFO_CAVALIERI.txt"
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputDARFO_CAVALIERI.txt", line 19: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_DARFO_CAVALIERI.txt"
+Could not find/open font when opening font "arial", using internal non-scalable font
+
+plot "/home/meteo/scripts/idrotrsoglie/dati/mp/durate/cdur6_DARFO_CAVALIERI.txt" using 2:1 with lines lt 3 lw 3 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_DARFO_CAVALIERI.txt" u 3:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_DARFO_CAVALIERI.txt" u 3:2:2 with labels offset 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/mpDARFO_CAVALIERI.tmp" u ($2+0.1):($1+0.07):4 with labels rotate left axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_DARFO_CAVALIERI.txt" u 3:2 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_DARFO_CAVALIERI.txt" u 3:2:yticlabels(2) w p ps 0 axes x1y2
+                                                                                                                           		                                                                                                              		                                                                                                             		                                                                                                                      ^
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputDARFO_CAVALIERI.txt", line 20: warning: Skipping data file with no valid points
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputDARFO_CAVALIERI.txt", line 20: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_DARFO_CAVALIERI.txt"
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputDARFO_CAVALIERI.txt", line 20: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_DARFO_CAVALIERI.txt"
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+awk: cmd. line:1: fatal: cannot open file `/home/meteo/scripts/idrotrsoglie/dati/mp/livm_.txt' for reading (No such file or directory)
+(standard_in) 2: syntax error
+(standard_in) 1: syntax error
+awk: cmd. line:1: fatal: cannot open file `/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_ORIO_LITTA_FRAN.txt' for reading (No such file or directory)
+Could not find/open font when opening font "arial", using internal non-scalable font
+
+plot "/home/meteo/scripts/idrotrsoglie/dati/mp/durate/cdur_ORIO_LITTA_FRAN.txt" using 2:1 with lines lt 3 lw 3 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_ORIO_LITTA_FRAN.txt" u 3:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_ORIO_LITTA_FRAN.txt" u 3:2:2 with labels offset 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/mpORIO_LITTA_FRAN.tmp" u ($2+0.05):($1+0.15):4 with labels rotate left axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_ORIO_LITTA_FRAN.txt" u 3:2 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_ORIO_LITTA_FRAN.txt" u 3:2:yticlabels(2) w p ps 0 axes x1y2
+                                                                                                                          		                                                                                                              		                                                                                                             		                                                                                                                       ^
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputORIO_LITTA_FRAN.txt", line 19: warning: Skipping data file with no valid points
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputORIO_LITTA_FRAN.txt", line 19: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_ORIO_LITTA_FRAN.txt"
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputORIO_LITTA_FRAN.txt", line 19: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_ORIO_LITTA_FRAN.txt"
+Could not find/open font when opening font "arial", using internal non-scalable font
+
+plot "/home/meteo/scripts/idrotrsoglie/dati/mp/durate/cdur6_ORIO_LITTA_FRAN.txt" using 2:1 with lines lt 3 lw 3 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_ORIO_LITTA_FRAN.txt" u 3:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livf_ORIO_LITTA_FRAN.txt" u 3:2:2 with labels offset 4 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/mpORIO_LITTA_FRAN.tmp" u ($2+0.1):($1+0.07):4 with labels rotate left axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_ORIO_LITTA_FRAN.txt" u 3:2 w p pt 7 ps 3 lt 10 lc 1 axes x1y2, 		 "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_ORIO_LITTA_FRAN.txt" u 3:2:yticlabels(2) w p ps 0 axes x1y2
+                                                                                                                           		                                                                                                              		                                                                                                             		                                                                                                                      ^
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputORIO_LITTA_FRAN.txt", line 20: warning: Skipping data file with no valid points
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputORIO_LITTA_FRAN.txt", line 20: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_ORIO_LITTA_FRAN.txt"
+"/home/meteo/scripts/idrotrsoglie/dati/mp/inputORIO_LITTA_FRAN.txt", line 20: warning: Skipping unreadable file "/home/meteo/scripts/idrotrsoglie/dati/mp/livmisu_ORIO_LITTA_FRAN.txt"
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font
+Could not find/open font when opening font "arial", using internal non-scalable font

@@ -1,0 +1,19 @@
+set terminal png giant size 950,666
+		set output "/home/meteo/scripts/idrotrsoglie/dati/14301scnm.png"
+		set title "Stazione di GAMBOLO\n Scala valida dal 20150101\n a=24.291; b=-0.031; c=1.661 per 0.27<=H[m]<=1.50\n valore alle 09:40:00.000 del 2017-09-13"
+		set grid lt 0 lw 1
+		unset key
+		set y2tics nomirror
+		set xlabel "Livello [m]"
+		#set x2label "portata misure"
+		set ylabel "Portata attuale [mc/s]"
+		set y2label "Portata [mc/s]"
+		set xtics nomirror
+		set pointsize 0.8
+		set xrange [0.27:1.50]
+		set yrange [0:24.291*(1.50+-0.031)**1.661]
+		set y2range [0:24.291*(1.50+-0.031)**1.661]
+		set arrow from 0.27,0 to 0.27,(24.291*(0.27+-0.031)**1.661) 
+		set arrow from 1.50,0 to 1.50,(24.291*(1.50+-0.031)**1.661)
+		#set autoscale y2
+		plot x<1.50 ? 24.291*(x+-0.031)**1.661 : 1/0 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc14301.dat" u 1:2 w p pt 5 ps 3 lt 8 lc 4 axes x1y1, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc14301.dat" u ($1+0.2):($2+0.2):1 with labels axes x1y2, "/home/meteo/scripts/idrotrsoglie/dati/mp/psc14301.dat" u 1:2:yticlabels(2) w p ps 0 axes x1y2
